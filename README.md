@@ -16,5 +16,5 @@ docker compose exec typephp bash
 tpc seu_arquivo.php
 
 # com performance e saída de arquivo
-tpc -O3 --build-dir ./build maim.php
+tpc -O3 seu_script.php --build-dir build
 ```
