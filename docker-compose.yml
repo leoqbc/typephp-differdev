@@ -1,0 +1,9 @@
+services:
+  typephp:
+    image: "leoqbc/typephp-swoole:latest"
+    tty: true
+    volumes:
+      - ".:/app"
+    ports:
+      - "80:9501"
+    entrypoint: ["php", "-a"]
