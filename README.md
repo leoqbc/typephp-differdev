@@ -2,6 +2,8 @@
 
 1. Primeiro passo
 ```sh
+# buildar a imagem
+docker build . -t leoqbc/typephp-swoole:latest
 docker compose up -d
 ```
 
