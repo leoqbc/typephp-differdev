@@ -22,7 +22,7 @@ $server->on(Constant::EVENT_START, function ($server) {
 });
 
 $server->on(Constant::EVENT_REQUEST, function ($request, $response) {
-    fib(35);
+    // fib(35);
     $response->end('Hello From PHP + Swoole' . PHP_EOL);
 });
 

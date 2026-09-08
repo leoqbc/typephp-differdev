@@ -2,6 +2,7 @@
 
 use Swoole\Http\Server;
 use Swoole\Constant;
+use native_types;
 
 function fib(int $n): int
 {
@@ -24,7 +25,7 @@ function main(): void
     });
 
     $server->on(Constant::EVENT_REQUEST, function ($request, $response) {
-        fib(35);
+        // fib(35);
         $response->end('Hello From TypePHP' . PHP_EOL);
     });
 
