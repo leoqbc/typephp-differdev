@@ -7,4 +7,5 @@ function fib(int $n): int
     return fib($n - 1) + fib($n - 2);
 }
 
-fib(40);
+echo fib(40) . PHP_EOL;
+

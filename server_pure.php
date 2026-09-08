@@ -1,15 +1,9 @@
 <?php
 
-use Swoole\Http\Server;
-use Swoole\Constant;
-
 require __DIR__ . '/vendor/autoload.php';
 
-function fib(int $n): int
-{
-    if ($n <= 1) return $n;
-    return fib($n - 1) + fib($n - 2);
-}
+use Swoole\Http\Server;
+use Swoole\Constant;
 
 $server = new Server('0.0.0.0', 9501);
 
@@ -22,7 +16,6 @@ $server->on(Constant::EVENT_START, function ($server) {
 });
 
 $server->on(Constant::EVENT_REQUEST, function ($request, $response) {
-    // fib(35);
     $response->end('Hello From PHP + Swoole' . PHP_EOL);
 });
 

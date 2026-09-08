@@ -4,12 +4,6 @@ use Swoole\Http\Server;
 use Swoole\Constant;
 use native_types;
 
-function fib(int $n): int
-{
-    if ($n <= 1) return $n;
-    return fib($n - 1) + fib($n - 2);
-}
-
 function main(): void
 {
     require __DIR__ . '/vendor/autoload.php';
