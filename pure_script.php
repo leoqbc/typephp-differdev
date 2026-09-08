@@ -1,5 +1,7 @@
 <?php
 
+use native_types;
+
 // Operação de CPU-Bound
 function fib(int $n): int
 {
@@ -7,5 +9,8 @@ function fib(int $n): int
     return fib($n - 1) + fib($n - 2);
 }
 
-echo fib(40) . PHP_EOL;
+function main(): void
+{
+    echo fib(40) . PHP_EOL;
+}
 

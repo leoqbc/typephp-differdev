@@ -19,7 +19,6 @@ function main(): void
     });
 
     $server->on(Constant::EVENT_REQUEST, function ($request, $response) {
-        // fib(35);
         $response->end('Hello From TypePHP' . PHP_EOL);
     });
 
