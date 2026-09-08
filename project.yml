@@ -1,4 +1,4 @@
 name: hello
 
 sources:
-  - hello.php
+  - server.php

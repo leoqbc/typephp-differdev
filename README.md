@@ -2,8 +2,15 @@
 
 1. Primeiro passo
 ```sh
-# buildar a imagem
+# buildar a imagem de teste
+
+# No Mac arm64 com OrbStack
+docker build . --platform linux/amd64 -t leoqbc/typephp-swoole:latest
+
+# No linux amd64
 docker build . -t leoqbc/typephp-swoole:latest
+
+# Inicializamos o container
 docker compose up -d
 ```
 
